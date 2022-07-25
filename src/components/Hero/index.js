@@ -1,23 +1,20 @@
 import React from 'react';
-import {Phones,Shape} from '../HeroBg';
+import styled from 'styled-components';
+
 import { HeroItem } from '../HeroItem';
 import {Cards,Budgeting,OnBoarding,Processor} from '../Icons';
 import { PrimaryButton } from '../Buttons';
 import { 
   HeroImages,
   HeroSection,
-  Button,
   H1,
   H2,
-  H3,
+  Img,
   HeroDescription,
   HeroSubSection,
   HeroGrid,
   HeroSubDescription,
-  HeroGridItem,
-  HeroGridItemCircle,
   Text } from './styles';
-
 
 export const Hero = () => {
   return (
@@ -32,8 +29,19 @@ export const Hero = () => {
             <PrimaryButton path={'/'}>Request Invite</PrimaryButton>
         </HeroDescription>
         <HeroImages>
-            <Shape/>
-            <Phones style={{position: 'relative',left: '100px',top: '-700px',zIndex: '1'}}/>
+           <Img/>
+            
+            {/*  <Shape/> //borrar cuando solucione lo del borde
+            
+            <img style={{position: 'relative',left: '100px',top: '-650px',zIndex: '1', width: '900px', 
+              height: '720px', objectFit: 'contain'}} src={Phones}></img>
+            
+            
+            <Phones style={{position: 'relative',left: '100px',top: '-700px',zIndex: '1'}}/>*/
+            /*<img style={{left: '800px',top: '80px',zIndex: '1', width: '900px', 
+            display: 'block',position: 'relative',
+              height: '720px', objectFit: 'contain'}} src={Phones}></img>*/
+            }
         </HeroImages>
     
         

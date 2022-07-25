@@ -1,5 +1,4 @@
-import styled from 'styled-components'
-import { Link as LinkRouter } from 'react-router-dom';
+import styled from 'styled-components';
 
 export const NonstyleButton = styled.button`
 
@@ -24,20 +23,6 @@ cursor:pointer;
     100% { opacity: 1; }
   }
 `
-
-export const NavButton = styled.nav`
-  display:grid;
-  grid-template-columns: repeat(2,minmax(70px, 1fr));
-  grid-template-rows: repeat(3,minmax(30px, 1fr)); 
-  width: 100%;
-  color: var(--light-gray);
-  font-weight: 400;
-  font-size: 1rem;
-  justify-content: space-evenly;
-  list-style:none ;
-`
-
-
 
 export const Button = styled.button`
 

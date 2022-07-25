@@ -28,8 +28,6 @@ export const IconsFooterSection = styled.div`
   justify-content: space-around;
   margin: 50px 0;
 }
-
- 
 `
 
 export const Nav = styled.nav`

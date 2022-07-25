@@ -1,7 +1,5 @@
 import * as React from "react";
 import { Svg } from './styles';
-import { Link } from "react-router-dom";
-
 
 export const Facebook = (props) => (
     <Svg

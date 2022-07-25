@@ -5,7 +5,9 @@ export const Home = () => {
   return (
     <>
       <Hero />
-      <ListOfArticles/>
+      <ListOfArticles
+        button={true}
+      />
     </>
   )
 }

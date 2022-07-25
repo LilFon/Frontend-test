@@ -1,15 +1,10 @@
 import React from 'react';
-import { SecondaryButton } from '../Buttons';
 import { 
-    FormSection,
     H2,
     FormDescription,
-    TableSection,
+    TableArticles,
     Text,
-    TextArea,
-    TextInput,
-    Input,
-    UserForm,
+    TableSection,
         } from './styles';
 
 
@@ -19,13 +14,13 @@ export const Table = () => {
     {name: 'pedr2', age: 20, content: '2222dasdada', date: '22'},
     {name: 'pedr3', age: 20, content: '2222dasdada', date: '22'},]
   return (
-    <TableSection>
+    <TableArticles>
     <FormDescription>
       <H2>Previous Articles</H2>
       <Text>Review and edit previous blog posts published on to the homepage. </Text>
 
       </FormDescription>
-    <table>
+    <TableSection>
         <tr>
           <th>AUTHOR NAME</th>
           <th>TITLE</th>
@@ -42,7 +37,7 @@ export const Table = () => {
             </tr>
           )
         })}
-      </table>
-    </TableSection>
+      </TableSection>
+    </TableArticles>
   )
 }

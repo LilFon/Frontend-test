@@ -1,20 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import {
-  Li,
-  Nav,
   NonstyleButton,
   Button,
   FormButton
   } from './styles';
 import { Facebook,Youtube,Twitter,Pinterest,Instagram } from '../LogoSocial';
 
-//window.scrollTo(0, 0)
-
 export const PrimaryButton = ({ path,children }) => {
     return (
-     <Link to={path} >
-      <Button>
+     <Link to={path}>
+      <Button onClick={() => {window.scrollTo(0, 0)}}>
         {children}
       </Button>
       </Link>

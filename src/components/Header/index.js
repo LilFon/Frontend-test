@@ -1,17 +1,19 @@
 import React from 'react';
 import { Logo }  from '../Logo/index';
-import { LogoContainer, Nav,HeaderSection,IconMenu, Link} from './styles';
 import { PrimaryButton } from '../Buttons';
+import { Nav,
+         HeaderSection,
+         IconMenu,
+         Link
+        } from './styles';
+
 
 
 export const Header = () => {
   return (
     <HeaderSection>
       <IconMenu/>
-        <LogoContainer>
         <Logo/>
-        </LogoContainer>
-        
         <Nav>
           <Link to={'/'}>Home</Link>
           <Link to={'/'}>About</Link>

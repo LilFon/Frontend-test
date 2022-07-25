@@ -6,16 +6,15 @@ import {
   ArticleGridItem,
   Text } from './styles';
 
-
-export const Article = () => {
+export const Article = (props) => {
   return (
     <>
     
-        <ArticleGridItem>
-         <Img src='https://picsum.photos/533/400?random=2'></Img>
-         <Author>By: juan fonseca</Author>
-          <H4>Treat yourself without worrying about money Treat yourself without worrying about money</H4>
-          <Text>Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world. Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.OuUUUUUUUUUUUUUUUUUUUU </Text>
+        <ArticleGridItem key={props.id}>
+         <Img src={props.image}></Img>
+         <Author>{props.author}</Author>
+          <H4>{props.title}</H4>
+          <Text>{props.content}</Text>
         </ArticleGridItem>
        
    

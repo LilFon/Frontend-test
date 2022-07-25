@@ -1,6 +1,30 @@
-import styled from 'styled-components'
-import { Link as LinkRouter } from 'react-router-dom';
-import { Phones } from '../HeroBg';
+import styled from 'styled-components';
+import Phones from '../../assets/images/phones.png';
+import HeroBg from '../../assets/images/heroBg.png';
+
+export const Img = styled.img`
+
+    background: url(${Phones}) center bottom no-repeat, url(${HeroBg}) center no-repeat;
+    background-size: 700px 880px, 690px 880px;
+    background-repeat: no-repeat;
+    width: 700px; 
+    height: 880px;
+    position: absolute;
+    top: 20px;
+    right:0px;
+    
+    @media (max-width: 1250px){
+
+    background-image: url(${Phones}), url(${HeroBg});
+
+    position: relative;
+    top: 5px;
+    left: 70px;
+    width: 900px; 
+    height: 720px;
+    }
+    
+   `
 
 export const H1 = styled.h1`
     font-size: 3rem;
@@ -8,10 +32,6 @@ export const H1 = styled.h1`
 `
 export const H2 = styled.h2`
   font-size: 2.5rem;
-  font-weight: 400;
-`
-export const H3 = styled.h3`
-  font-size: 1.4rem;
   font-weight: 400;
 `
 
@@ -34,10 +54,7 @@ grid-template-columns: repeat(2,minmax(150px, 1fr));
   grid-template-rows: repeat(2,  1fr);
   height: 100vh;
 
-}
-
-
-`
+}`
 
 export const HeroSubSection = styled.section`
 background: var(--cream);
@@ -54,14 +71,9 @@ justify-items: center;
 };
 
 @media (max-width: 800px) {
-  height: 280vh;
+  height: 290vh;
     
-};
-
-
-
-
-`
+};`
 
 export const HeroDescription = styled.div`
   
@@ -81,13 +93,14 @@ export const HeroDescription = styled.div`
   
     grid-area: 2/1/2/1;
   
-  }
+  }`
 
-`
 export const HeroSubDescription = styled.div`
 
- display:flex;
- flex-direction:column;
+ display:grid;
+ grid-template-rows: repeat(2,minmax(50px, 1fr));
+ margin-bottom: 50px;
+ margin-left: 150px;
  ${Text} {
   width: 550px;
   height: 80px; }
@@ -95,16 +108,10 @@ export const HeroSubDescription = styled.div`
     height:30px;
   }
 
-  
-  @media (max-width: 1200px) {
-   
-  
-  };
-
 @media (max-width: 800px) {
   padding : 0;
   justify-content: center;
-
+  margin-left: 0px;
   ${Text} {
     width: 300px;
     height: 100px; 
@@ -117,18 +124,17 @@ export const HeroSubDescription = styled.div`
     text-align: center;
   };
   
-};
- 
-`
+};`
 
 export const HeroGrid = styled.div`
  display:grid;
  justify-items:center;
  align-items :center;
- 
+ margin: 0 150px;
  grid-template-columns: repeat(4,  1fr);
 
  @media (max-width: 1200px) {
+
   grid-template-columns: repeat(2,  1fr);
   grid-template-rows: repeat(2,  1fr);
   
@@ -138,55 +144,11 @@ export const HeroGrid = styled.div`
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4,  1fr);
 
-}
-
- `
-export const HeroGridItem = styled.figure`
-display: grid;
-grid-gap: 25px;
-grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-margin-bottom: 100px;
-`
-export const HeroGridItemCircle = styled.div`
-width: 70px;
-height: 70px;
--moz-border-radius: 50%;
--webkit-border-radius: 50%;
-border-radius: 50%;
-background: linear-gradient(to right,var(--lime-green) 0%,  var(--blue) 100%);
-
-svg {
-  margin: 12px auto 0 auto;
-}
-`
+}`
 
 export const HeroImages = styled.nav`
-  
 height: 100%;
 width:100%;
 overflow: hidden;
 
-${Phones} {
-  overflow: visible;
-  display: block;
-      position: relative;
-      top: -150px;
-      z-index: 1;
-}
-
-
-`
-
-
-
-export const Button = styled.button`
-
-height: 50px;
-width: 160px;
-border: none;
-border-radius: 25px;
-color: var(--white);
-font-weight: bold;
-font-size: 1rem;
-background: linear-gradient(to right,var(--lime-green) 0%,  var(--blue) 100%);
 `

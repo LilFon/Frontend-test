@@ -1,18 +1,6 @@
 import React from 'react';
 import {
-  Author, 
-  HeroImages,
-  HeroSection,
-  Button,
-  H1,
-  H2,
-  H3,
   H4,
-  Img,
-  HeroDescription,
-  HeroSubSection,
-  HeroGrid,
-  HeroSubDescription,
   HeroGridItem,
   HeroGridItemCircle,
   Text } from './styles';

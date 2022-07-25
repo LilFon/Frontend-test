@@ -1,11 +1,48 @@
 import styled from 'styled-components'
 import { Link as LinkRouter } from 'react-router-dom';
-import { Phones } from '../HeroBg';
 
-export const H1 = styled.h1`
-    font-size: 3rem;
-    font-weight: 400;
+export const TableArticles = styled.section`
+padding-top: 100px;
+background: var(--cream);
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-items: center;
+width: 100%;
+height: 90vh;
+
+@media (max-width: 1200px) {
+  height: 150vh;
+  align-items: center;
+justify-items: center;
+  
+};
+
+@media (max-width: 800px) {
+  height: 280vh;
+    
+};
+
+
+
+
 `
+
+export const TableSection = styled.table`
+width:  800px;
+height: 46vh;
+border-collapse:collapse;
+background: var(--white);
+border-radius: 8px;
+
+filter: drop-shadow(0px 0px 3px rgba(0,0,0,.3));
+tr:nth-child(2n) {
+  background: var(--cream);
+}
+
+
+`
+
 export const H2 = styled.h2`
   font-size: 2.5rem;
   font-weight: 400;
@@ -59,31 +96,11 @@ grid-template-columns: repeat(2,minmax(150px, 1fr));
 
 `
 
-export const TableSection = styled.section`
-padding-top: 100px;
-background: var(--cream);
-display:flex;
-flex-direction: column;
-align-items: center;
-justify-items: center;
-width: 100%;
-height: 80vh;
 
-@media (max-width: 1200px) {
-  height: 150vh;
-  align-items: center;
-justify-items: center;
-  
-};
-
-@media (max-width: 800px) {
-  height: 280vh;
-    
-};
-
-
-
-
+///////
+export const H1 = styled.h1`
+    font-size: 3rem;
+    font-weight: 400;
 `
 
 export const HeroDescription = styled.div`
@@ -183,35 +200,4 @@ background: linear-gradient(to right,var(--lime-green) 0%,  var(--blue) 100%);
 svg {
   margin: 12px auto 0 auto;
 }
-`
-
-export const HeroImages = styled.nav`
-  
-height: 100%;
-width:100%;
-overflow: hidden;
-
-${Phones} {
-  overflow: visible;
-  display: block;
-      position: relative;
-      top: -150px;
-      z-index: 1;
-}
-
-
-`
-
-
-
-export const Button = styled.button`
-
-height: 50px;
-width: 160px;
-border: none;
-border-radius: 25px;
-color: var(--white);
-font-weight: bold;
-font-size: 1rem;
-background: linear-gradient(to right,var(--lime-green) 0%,  var(--blue) 100%);
 `

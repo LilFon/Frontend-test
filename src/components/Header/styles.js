@@ -38,8 +38,6 @@ text-decoration: none;
 `
 
 export const Nav = styled.nav`
-  
- 
   display: flex;
   width: 100%;
   color: var(--gray);
@@ -51,7 +49,6 @@ export const Nav = styled.nav`
   
 `
 
-
 export const HeaderSection = styled.section`
   align-items: center;
   justify-items: center;
@@ -60,8 +57,6 @@ export const HeaderSection = styled.section`
   width: 100%;
   height: 80px;
   grid-template-columns: repeat(3,minmax(150px, 1fr));
-  
-  /**/
   filter: drop-shadow(0px 0px 3px rgba(0,0,0,.3));
   left: 0;
   position: fixed;
@@ -86,28 +81,4 @@ export const HeaderSection = styled.section`
   }
 
   
-`
-
-export const LogoContainer = styled.div`
-  
- display:flex;
-
-  
-`
-
-
-
-
-
-export const Button = styled.button`
-
-height: 50px;
-width: 160px;
-border: none;
-border-radius: 25px;
-color: var(--white);
-font-weight: bold;
-font-size: 1rem;
-margin-left:50px;
-background: linear-gradient(to right,var(--lime-green) 0%,  var(--blue) 100%);
 `
