@@ -13,7 +13,7 @@ import {
     UserForm,
         } from './styles';
 
-export const Form = ({onSubmit,text,description}) => {
+export const Form = ({onSubmit,text,description,id}) => {
 
   const author = useValue('');
   const title = useValue('');
@@ -22,8 +22,8 @@ export const Form = ({onSubmit,text,description}) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onSubmit({
-
+    console.log(id);
+    onSubmit( (id!=null && id) ,  {
       author: author.value,
       content: content.value,
       title: title.value

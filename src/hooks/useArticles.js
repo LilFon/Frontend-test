@@ -1,7 +1,7 @@
 import { useEffect, useState} from 'react';
 import { getValue } from '../utils/getValue';
 
-  export function useLastestArticles () {
+  export function useArticles () {
     const [loading, setLoading] = useState(false);
     const [results, setResults] = useState(undefined);
   
@@ -9,7 +9,7 @@ import { getValue } from '../utils/getValue';
       setLoading(true);
         getValue()
         .then(response => {
-            setResults( response.slice(0,4));
+            setResults( response.slice(0,6));
             setLoading(false);
         }).catch (error => console.log("ha ocurrido un error:::"+error) )  
        
