@@ -25,8 +25,11 @@ export const Table = () => {
   return (
     <TableArticles>
     <TableDescription>
+      <div>
       <H2>Previous Articles</H2>
       <Text>Review and edit previous blog posts published on to the homepage. </Text>
+      </div>
+      
 
       </TableDescription>
     <TableSection>
@@ -50,7 +53,7 @@ export const Table = () => {
               <Td>{value.title}</Td>
               <Td>{value.content}</Td>
               <Td>{value.date}</Td>
-              <Td><Link to={`/EditArticle#${value.id}`}>Edit</Link></Td>
+              <Td><Link to={`/EditArticle#${value.id}`} onClick={() => {window.scrollTo(0, 0)}}>Edit</Link></Td>
             </Tr>
           )
         })}

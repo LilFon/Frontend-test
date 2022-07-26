@@ -31,8 +31,6 @@ padding-top: 100px;
 background: var(--cream);
 display:flex;
 flex-direction: column;
-align-items: center;
-justify-items: center;
 width: 100%;
 height: 130vh;
 
@@ -50,8 +48,9 @@ justify-items: center;
 
 export const FormDescription = styled.div`
 
- display:flex;
- flex-direction:column;
+display: flex;
+margin-left:150px;
+
  ${Text} {
   width: 550px;
   height: 80px; }
@@ -61,7 +60,7 @@ export const FormDescription = styled.div`
 
   
   @media (max-width: 1200px) {
-   
+    margin: 0px;
   
   };
 
@@ -84,6 +83,8 @@ export const FormDescription = styled.div`
 };`
 
 export const UserForm = styled.form`
+    align-self: center;
+    justify-content: center;
     paddin: 20px 0;
     background: var(--white);
     display: flex;

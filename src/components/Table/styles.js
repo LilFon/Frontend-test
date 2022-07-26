@@ -2,14 +2,12 @@ import styled from 'styled-components'
 import { Link as LinkRouter } from 'react-router-dom';
 
 export const TableArticles = styled.section`
-padding-top: 100px;
+padding-top: 40px;
 background: var(--cream);
 display:flex;
 flex-direction: column;
-align-items: center;
-justify-items: center;
 width: 100%;
-height: 90vh;
+height: 100vh;
 
 @media (max-width: 1200px) {
   height: 150vh;
@@ -19,7 +17,7 @@ justify-items: center;
 };
 
 @media (max-width: 800px) {
-  height: 280vh;
+  height: 120vh;
     
 };`
 
@@ -42,39 +40,51 @@ export const Nav = styled.nav`
 `
 
 export const Link = styled(LinkRouter)`
-color: var(--gray);
+color: var(--dark-green);
 text-decoration: none;
-&:active {
- color: var(--green);
 
- &:after {
-  height: 4px;
-  width: 10px;
-  display: block;
-  position: relative;
-  top: -36px; 
-  content: '';
-  z-index:1000;
-  background: linear-gradient(to right,var(--lime-green) 0%,  var(--blue) 100%);
-  
-}
 
 };
 `
 
 export const Pagination = styled.div`
+align-self:center;
 margin-top: 30px;
 border-top: 1px solid var(--light-cream);
 width:  800px;
 display: flex;
 justify-content: space-between;
+
+p {
+  cursor:pointer;
+}
+
+${Link} {
+  color: var(--gray);
+  &:active {
+  color: var(--green);
+ 
+  &:after {
+   height: 4px;
+   width: 10px;
+   display: block;
+   position: relative;
+   top: -36px; 
+   content: '';
+   z-index:1000;
+   background: linear-gradient(to right,var(--lime-green) 0%,  var(--blue) 100%);
+   
+ } }
+
+
 @media (max-width: 900px) {
   width:  400px;
-
+  
 }
 `
 
 export const TableSection = styled.table`
+align-self:center;
 width:  800px;
 height: 46vh;
 border-collapse:collapse;
@@ -164,60 +174,32 @@ export const H1 = styled.h1`
     font-weight: 400;
 `
 
-export const HeroDescription = styled.div`
-  
- display:flex;
- flex-direction:column;   
- 
- ${Text} {
-  width: 440px;
-  height: 70px; 
-  };
-  ${H1} {
-    width: 440px;
-    height:80px;
-  };
-
-  @media (max-width: 900px) {
-  
-    grid-area: 2/1/2/1;
-  
-  }
-
-`
 export const TableDescription = styled.div`
 
- display:flex;
- flex-direction:column;
- ${Text} {
-  width: 550px;
-  height: 80px; }
-  ${H2} {
-    height:30px;
-  }
-
-  
-  @media (max-width: 1200px) {
-   
-  
-  };
+margin-left: 150px;
+${Text} {
+ width: 550px;
+ height: 80px; }
+ ${H2} {
+   height:30px;
+ }
 
 @media (max-width: 800px) {
-  padding : 0;
-  justify-content: center;
+ padding : 0;
+ justify-content: center;
+ margin: 0px;
+ ${Text} {
+   width: 300px;
+   height: 100px; 
+   text-align: center;
+ };
 
-  ${Text} {
-    width: 300px;
-    height: 100px; 
-    text-align: center;
-  };
-
-  ${H2} {
-    width: 300px;
-    height: 100px; 
-    text-align: center;
-  };
-  
+ ${H2} {
+   width: 300px;
+   height: 100px; 
+   text-align: center;
+ };
+ 
 };
  
 `

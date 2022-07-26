@@ -22,13 +22,12 @@ export const Form = ({onSubmit,text,description,id}) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(id);
-    onSubmit( (id!=null && id) ,  {
+    onSubmit( {
       author: author.value,
       content: content.value,
       title: title.value
   
-      }).then(()=> {
+      },(id!=null && id) ).then(()=> {
         setMessage('Operacion realizada correctamente');
       }).catch( () => {
         setMessage('Hubo un error');
@@ -45,9 +44,10 @@ export const Form = ({onSubmit,text,description,id}) => {
     <>
     <FormSection onSubmit={handleSubmit}>
       <FormDescription>
-      <H2>{text}</H2>
+        <div>
+        <H2>{text}</H2>
       <Text>{description}</Text>
-
+        </div>
       </FormDescription>
       <UserForm>
         <TextInput>Author</TextInput>
