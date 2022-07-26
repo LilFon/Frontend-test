@@ -15,13 +15,13 @@ export const Header = () => {
       <IconMenu/>
         <Logo/>
         <Nav>
-          <Link to={'/'}>Home</Link>
-          <Link to={'/'}>About</Link>
-          <Link to={'/'}>Contact</Link>
-          <Link to={'/'}>Blog</Link>
-          <Link to={'/'}>Careers</Link>
+          <Link to={'/Frontend-test'}>Home</Link>
+          <Link to={'/Frontend-test'}>About</Link>
+          <Link to={'/Frontend-test'}>Contact</Link>
+          <Link to={'/Frontend-test'}>Blog</Link>
+          <Link to={'/Frontend-test'}>Careers</Link>
         </Nav>
-        <PrimaryButton path={'/'}>Request Invite</PrimaryButton>
+        <PrimaryButton path={'/Frontend-test'}>Request Invite</PrimaryButton>
         
     </HeaderSection>
   )

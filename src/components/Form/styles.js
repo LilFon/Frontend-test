@@ -34,6 +34,12 @@ flex-direction: column;
 width: 100%;
 height: 130vh;
 
+& > ${Text} {
+  font-size: 1.2rem;
+  text-align: center;
+  justify-self: center;
+}
+
 @media (max-width: 1200px) {
   height: 150vh;
   align-items: center;

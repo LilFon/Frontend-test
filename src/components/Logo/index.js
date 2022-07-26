@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 
 export const Logo = (props) => (
-  <Link to="/">
+  <Link to="/Frontend-test">
   <Svg
     width={139}
     height={20}
@@ -78,7 +78,7 @@ export const Logo = (props) => (
 
 
 export const Logo2 = (props) => (
-  <Link to="/">
+  <Link to="/Frontend-test">
   <Svg
     width={139}
     height={20}

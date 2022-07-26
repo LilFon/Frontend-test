@@ -37,7 +37,10 @@ export const Form = ({onSubmit,text,description,id}) => {
       content.setValue('');
       title.setValue('');
       
-      setTimeout(()=>{ setMessage('') },3000);
+      setTimeout(()=>{ 
+      setMessage(''); 
+      window.location.href = '/Frontend-test/';
+      },3000);
    }
 
   return (

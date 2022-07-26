@@ -5,7 +5,6 @@ import { HeroItem } from '../HeroItem';
 import {Cards,Budgeting,OnBoarding,Processor} from '../Icons';
 import { PrimaryButton } from '../Buttons';
 import { 
-  HeroImages,
   HeroSection,
   H1,
   H2,
@@ -15,6 +14,9 @@ import {
   HeroGrid,
   HeroSubDescription,
   Text } from './styles';
+
+  import Phones from '../../assets/images/phones.png';
+import HeroBg from '../../assets/images/heroBg.png';
 
 export const Hero = () => {
   return (
@@ -26,10 +28,10 @@ export const Hero = () => {
             saving,
             budgeting,
             investing, and much more.</Text>
-            <PrimaryButton path={'/'}>Request Invite</PrimaryButton>
+            <PrimaryButton path={'/Frontend-test'}>Request Invite</PrimaryButton>
         </HeroDescription>
-        <HeroImages>
-           <Img/>
+        
+           <Img src={Phones}/>
             
             {/*  <Shape/> //borrar cuando solucione lo del borde
             
@@ -42,7 +44,7 @@ export const Hero = () => {
             display: 'block',position: 'relative',
               height: '720px', objectFit: 'contain'}} src={Phones}></img>*/
             }
-        </HeroImages>
+        
     
         
         

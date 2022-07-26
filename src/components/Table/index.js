@@ -53,7 +53,7 @@ export const Table = () => {
               <Td>{value.title}</Td>
               <Td>{value.content}</Td>
               <Td>{value.date}</Td>
-              <Td><Link to={`/EditArticle#${value.id}`} onClick={() => {window.scrollTo(0, 0)}}>Edit</Link></Td>
+              <Td><Link to={`/Frontend-test/EditArticle#${value.id}`} onClick={() => {window.scrollTo(0, 0)}}>Edit</Link></Td>
             </Tr>
           )
         })}
@@ -62,13 +62,13 @@ export const Table = () => {
       <Text >← Previous</Text>
         
         <Nav>
-          <Link to={'/AddArticle'}>1</Link>
-          <Link to={'/AddArticle'}>2</Link>
-          <Link to={'/AddArticle'}>3</Link>
-          <Link to={'/AddArticle'}>...</Link>
-          <Link to={'/AddArticle'}>8</Link>
-          <Link to={'/AddArticle'}>9</Link>
-          <Link to={'/AddArticle'}>10</Link>
+          <Link to={'/Frontend-test/AddArticle'}>1</Link>
+          <Link to={'/Frontend-test/AddArticle'}>2</Link>
+          <Link to={'/Frontend-test/AddArticle'}>3</Link>
+          <Link to={'/Frontend-test/AddArticle'}>...</Link>
+          <Link to={'/Frontend-test/AddArticle'}>8</Link>
+          <Link to={'/Frontend-test/AddArticle'}>9</Link>
+          <Link to={'/Frontend-test/AddArticle'}>10</Link>
         </Nav> 
         <Text>Next →</Text>
       </Pagination>

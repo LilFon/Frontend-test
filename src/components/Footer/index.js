@@ -31,15 +31,15 @@ export const Footer = () => {
         </IconsFooterSection>
         
         <Nav>
-          <Link to="/">About Us</Link>
-          <Link to="/">Careers</Link>
-          <Link to="/">Contact</Link>
-          <Link to="/">Support</Link>
-          <Link to="/">Blog</Link>
-          <Link to="/">Privacy Policy</Link>
+          <Link to="/Frontend-test">About Us</Link>
+          <Link to="/Frontend-test">Careers</Link>
+          <Link to="/Frontend-test">Contact</Link>
+          <Link to="/Frontend-test">Support</Link>
+          <Link to="/Frontend-test">Blog</Link>
+          <Link to="/Frontend-test">Privacy Policy</Link>
         </Nav>
         <ButtonSection>
-        <PrimaryButton path={'/'}>Request Invite</PrimaryButton>
+        <PrimaryButton path={'/Frontend-test'}>Request Invite</PrimaryButton>
         <Span>© Easybank. All Rights Reserved</Span>
 
         </ButtonSection>

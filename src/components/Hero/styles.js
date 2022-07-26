@@ -1,10 +1,9 @@
 import styled from 'styled-components';
-import Phones from '../../assets/images/phones.png';
 import HeroBg from '../../assets/images/heroBg.png';
 
 export const Img = styled.img`
 
-    background: url(${Phones}) center bottom no-repeat, url(${HeroBg}) center no-repeat;
+    background:  url(${HeroBg}) center no-repeat;
     background-size: 700px 880px, 690px 880px;
     background-repeat: no-repeat;
     width: 700px; 
@@ -15,13 +14,12 @@ export const Img = styled.img`
     
     @media (max-width: 1250px){
 
-    background-image: url(${Phones}), url(${HeroBg});
+    background-image: url(${HeroBg});
 
-    position: relative;
-    top: 5px;
-    left: 70px;
-    width: 900px; 
-    height: 720px;
+    position: static;
+    
+    width: 450px; 
+    height: 600px;
     }
     
    `
@@ -52,7 +50,7 @@ grid-template-columns: repeat(2,minmax(150px, 1fr));
   
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2,  1fr);
-  height: 100vh;
+  height: 180vh;
 
 }`
 
@@ -145,10 +143,3 @@ export const HeroGrid = styled.div`
   grid-template-rows: repeat(4,  1fr);
 
 }`
-
-export const HeroImages = styled.nav`
-height: 100%;
-width:100%;
-overflow: hidden;
-
-`

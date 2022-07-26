@@ -17,9 +17,9 @@ function App() {
     <GlobalStyle/>
     <Header/>
     <Routes>
-     <Route path="/" element={<Home/>} />
-     <Route path="/AddArticle" element={<AddArticle/>} />
-     <Route path="/EditArticle" element={<EditArticle/>} />
+     <Route path="/Frontend-test" element={<Home/>} />
+     <Route path="/Frontend-test/AddArticle" element={<AddArticle/>} />
+     <Route path="/Frontend-test/EditArticle" element={<EditArticle/>} />
     </Routes>
     
     <Footer/>
